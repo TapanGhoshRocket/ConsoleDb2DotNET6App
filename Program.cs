@@ -20,7 +20,7 @@ Console.Read();
 
 string mySelectQuery = "Select * from blogs";
           
-DB2Command myCommand = new DB2Command(mySelectQuery, con1);
+DB2Command myCommand = new DB2Command(mySelectQuery, con);
 Console.WriteLine("Fetch data from blogs table");
 DB2DataReader myReader = myCommand.ExecuteReader();
 try
